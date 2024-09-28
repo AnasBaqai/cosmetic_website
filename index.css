@@ -1,0 +1,51 @@
+.position-relative {
+  position: relative;
+}
+
+.position-absolute {
+  position: absolute;
+}
+
+.bottom-0 {
+  bottom: 0;
+}
+
+.end-0 {
+  right: 0;
+}
+.logo {
+  background-color: gray;
+}
+
+
+/* Animations for sliding from left (text) and right (image) */
+@keyframes slideInLeft {
+  from {
+      transform: translateX(-100%);
+      opacity: 0;
+  }
+  to {
+      transform: translateX(0);
+      opacity: 1;
+  }
+}
+
+@keyframes slideInRight {
+  from {
+      transform: translateX(100%);
+      opacity: 0;
+  }
+  to {
+      transform: translateX(0);
+      opacity: 1;
+  }
+}
+
+/* Apply the animations when triggered */
+.slide-left {
+  animation: slideInLeft 1s ease-out;
+}
+
+.slide-right {
+  animation: slideInRight 1s ease-out;
+}
